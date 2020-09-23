@@ -22,12 +22,6 @@ public class Transacao {
     private Long id;
 
     @Column
-    private Integer ano;
-
-    @Column
-    private Integer mes;
-
-    @Column
     private String descricao;
 
     @Column
