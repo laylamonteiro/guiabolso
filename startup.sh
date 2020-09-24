@@ -1,7 +1,7 @@
 #!/bin/bash
-BASE_PATH=/App
-PROJECT_NAME=springboot-guiabolso
-GIT_PROJECT=git@github.com:laylamonteiro/guiabolso.git
+BASE_PATH=/
+PROJECT_NAME=guiabolso
+GIT_PROJECT=https://github.com/laylamonteiro/guiabolso
 GIT_BRANCH=master
 FAT_JAR=guiabolso-0.0.1-SNAPSHOT.jar
 GIT_RESULT=git_result.txt

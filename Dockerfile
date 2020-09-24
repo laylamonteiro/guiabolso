@@ -24,4 +24,4 @@ COPY startup.sh /App/
 RUN chmod +x /App/startup.sh
 EXPOSE 8080
 #expose port outside access is 8080
-ENTRYPOINT "/App/startup.sh"
+ENTRYPOINT "/guiabolso/startup.sh"
