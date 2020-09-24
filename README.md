@@ -23,7 +23,7 @@ $ git clone <https://github.com/laylamonteiro/guiabolso>
 
 ### Faça uma requisição GET para a URI: <http://localhost:8080/{id}/transacoes/{ano}/{mes}> onde:
 * ID: seja um número inteiro entre 1.000 e 100.000.000;
-* ano: seja um número inteiro entre 1900 e 2020;
+* ano: seja um número inteiro entre 1900 e o ano atual;
 * mes: seja um número inteiro entre 1 e 12;
 
 ### Resposta esperada:
