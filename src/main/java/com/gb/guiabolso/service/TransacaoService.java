@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
@@ -31,12 +32,14 @@ public class TransacaoService {
     private ObjectMapper objectMapper;
 
     public List<TransacaoDTO> listarTransacoes(Long usuarioId, Integer transacaoAno, Integer transacaoMes) {
+        Calendar cal = Calendar.getInstance();
+        int year = cal.get(Calendar.YEAR);
 
         //Checa se o parametros estão dentro do que é esperado
         if (usuarioId < 1000 || usuarioId > 100000000) {
             throw new EntityNotFoundException("O Id de usuário informado não é válido");
         }
-        if (transacaoAno > 2020 || transacaoAno < 1900) {
+        if (transacaoAno > year || transacaoAno < 1900) {
             throw new IllegalArgumentException("O ano informado para consulta não é válido");
         }
         if (transacaoMes < 1 || transacaoMes > 12) {
