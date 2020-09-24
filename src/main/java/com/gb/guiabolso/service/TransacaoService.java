@@ -36,7 +36,7 @@ public class TransacaoService {
         if (usuarioId < 1000 || usuarioId > 100000000) {
             throw new EntityNotFoundException("O Id de usuário informado não é válido");
         }
-        if (transacaoAno > 2020) {
+        if (transacaoAno > 2020 || transacaoAno < 1900) {
             throw new IllegalArgumentException("O ano informado para consulta não é válido");
         }
         if (transacaoMes < 1 || transacaoMes > 12) {
