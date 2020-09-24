@@ -3,11 +3,13 @@
 ## Mock de uma API de transações
 
 <h1 align="center">
-    <a href="https://www.java.com/pt_BR/">🔗 Java</a>
+    <a href="https://www.java.com/pt_BR/"> Java </a>
+     <a href="https://gradle.org/">| Gradle |</a>
+     <a href="https://www.docker.com/"> Docker </a>
 </h1>
 <p align="center">Mock de uma API para visualizar transações, geradas aleatoriamente</p>
 
-# 🎲 Rodando o Back End (servidor)
+# Rodando o Back End (servidor)
 ### Clone este repositório
 $ git clone <https://github.com/laylamonteiro/guiabolso>
 
@@ -33,3 +35,6 @@ Content-type: application/json
   }  
 ]
 ```
+
+
+# 
