@@ -20,8 +20,8 @@ RUN  touch /root/.ssh/known_hosts
 RUN apt install -y ssh
 RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
 # finish for github configuration
-COPY startup.sh /App/
-RUN chmod +x /App/startup.sh
+COPY startup.sh /guiabolso/
+RUN chmod +x /guiabolso/startup.sh
 EXPOSE 8080
 #expose port outside access is 8080
 ENTRYPOINT "/guiabolso/startup.sh"
