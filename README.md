@@ -17,9 +17,16 @@ $ git clone <https://github.com/laylamonteiro/guiabolso>
 
 ### Run > <i>GuiaBolsoApplication</i>
 
-### O servidor inciará na porta:8080 - acesse <http://localhost:8080/{id}/transacoes/{ano}/{mes}> 
+### O servidor inciará na porta:8080> 
 
 ## Contrato
+
+Faça uma requisição GET para a URI: <http://localhost:8080/{id}/transacoes/{ano}/{mes}> onde:
+ID: seja um número inteiro maior que 1.000 e menor que 100.000.000;
+ano: seja um número inteiro menor que o ano de 2020;
+mes: seja um número inteiro entre 1 e 12;
+
+Resposta esperada:
 
 ```
 [GET] /<id>/transacoes/<ano>/<mes>
