@@ -17,7 +17,7 @@ $ git clone <https://github.com/laylamonteiro/guiabolso>
 
 ### Run > <i>GuiaBolsoApplication</i>
 
-### O servidor inciará na porta:8080> 
+### O servidor iniciará na porta:8080 
 
 ## Contrato
 
