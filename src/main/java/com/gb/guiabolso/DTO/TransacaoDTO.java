@@ -12,7 +12,7 @@ public class TransacaoDTO {
     //O DTO a ser enviado para a tela
     private String descricao;
     private String data;
-    private String valor;
+    private Float valor;
     private Boolean duplicated;
 
 }

@@ -28,7 +28,7 @@ public class Transacao {
     private String data;
 
     @Column
-    private String valor;
+    private Float valor;
 
     @Column
     private Boolean duplicated;

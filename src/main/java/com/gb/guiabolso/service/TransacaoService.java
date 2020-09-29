@@ -5,7 +5,6 @@ import com.gb.guiabolso.DTO.TransacaoDTO;
 import com.gb.guiabolso.entity.Transacao;
 import com.gb.guiabolso.entity.Usuario;
 import com.gb.guiabolso.repository.TransacaoRepository;
-import com.gb.guiabolso.utils.CurrencyBuilder;
 import com.gb.guiabolso.utils.TimestampBuilder;
 import com.thedeanda.lorem.Lorem;
 import com.thedeanda.lorem.LoremIpsum;
@@ -96,7 +95,7 @@ public class TransacaoService {
 
                 //Gera um valor aleatório entre -999.999.999 e 999.999.999 no formato da moeda brasileira
                 Integer valor = ThreadLocalRandom.current().nextInt(-9999999, 9999999 + 1);
-                transacao.setValor(CurrencyBuilder.formatNumero(valor));
+                transacao.setValor((float)valor/100);
 
                 //Gera um valor aleatório para determinar se é duplicado ou não
                 Random random = new Random();
