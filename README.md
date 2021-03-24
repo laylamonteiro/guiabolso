@@ -11,7 +11,7 @@
 
 # Rodando o Back End (servidor)
 ### Clone este repositório
-$ git clone <https://github.com/laylamonteiro/guiabolso>
+$ git clone <https://github.com/laylamonteiro/mock_transaction_api>
 
 ### Abra o projeto na sua IDE de escolha
 
